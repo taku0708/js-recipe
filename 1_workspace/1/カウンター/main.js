@@ -26,3 +26,13 @@ minusButton.onclick = function() {
   count3 -= 1
   display3.textContent = count3
 }
+
+const taku = {
+  name: "nagahara taku",
+  age: 21,
+  hobby: ["baseball", "soccer"],
+  from: "kanagawa",
+  sayHello: function() {
+    console.log(`こんにちは${taku.name}と申します`)
+  },
+}

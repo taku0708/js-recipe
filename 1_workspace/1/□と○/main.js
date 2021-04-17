@@ -9,9 +9,21 @@ const figure = document.querySelector("#figure")
 // squareButton.onclick = function() {
 //   figure.classList.remove("rounded")
 // }
+let t = 0
 
 figure.onclick = function() {
-  figure.classList.add("rounded")
+  if (t === 0) {
+    figure.classList.add("rounded")
+    t = 1
+  } else if (t === 1) {
+    figure.classList.add("triangle")
+    figure.classList.remove("rounded")
+    t = 2
+  } else {
+    figure.classList.add("square")
+    figure.classList.remove("triangle")
+    t = 0
+  }
 }
 
 //色々なイベント

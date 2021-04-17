@@ -32,3 +32,9 @@ button.onclick = function() {
     button.textContent = "start"
   }
 }
+
+// const niceButton = document.querySelector("#nice-button")
+
+// niceButton.onclick = funciton() {
+//     console.log('こんにちは');
+// }

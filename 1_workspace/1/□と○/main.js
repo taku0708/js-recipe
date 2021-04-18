@@ -18,6 +18,7 @@ figure.onclick = function() {
   } else if (t === 1) {
     figure.classList.add("triangle")
     figure.classList.remove("rounded")
+    figure.classList.remove("square")
     t = 2
   } else {
     figure.classList.add("square")

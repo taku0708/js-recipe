@@ -62,6 +62,8 @@ nabeatsu(50)
 
 // 元気な秒針
 
+const button = document.querySelector("#button")
+
 const clock = function(number) {
   for (let n = 1; n <= number; n++) {
     if (n % 3 === 0) {
@@ -72,9 +74,9 @@ const clock = function(number) {
   }
 }
 
-// window.onload = function() {
-//   setInterval(clock, 1000)
-// }
+button.onclick = function() {
+  setInterval(clock, 1000)
+}
 
 // const clockAction = function() {
 //   setInterval(clock, 1000)

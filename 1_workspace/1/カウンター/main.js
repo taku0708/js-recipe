@@ -8,31 +8,25 @@ plusButton.onclick = function() {
 }
 
 // x2ボタン、-1ボタン
-const display2 = document.querySelector("#display2")
-const display3 = document.querySelector("#display3")
 
 const multiplyButton = document.querySelector("#multiply-button")
 const minusButton = document.querySelector("#minus-button")
 
-let count2 = 1
-let count3 = 1023
-
 multiplyButton.onclick = function() {
-  count2 = count2 * 2
-  display2.textContent = count2
+  count = count * 2
+  display.textContent = count
 }
 
 minusButton.onclick = function() {
-  count3 -= 1
-  display3.textContent = count3
+  count -= 1
+  display.textContent = count
 }
 
-const taku = {
-  name: "nagahara taku",
-  age: 21,
-  hobby: ["baseball", "soccer"],
-  from: "kanagawa",
-  sayHello: function() {
-    console.log(`こんにちは${taku.name}と申します`)
-  },
+// 電卓
+
+const counter1 = document.querySelector("#counter1")
+const counterResult = document.querySelector("#counter-container")
+
+counter1.onclick = function() {
+  counterResult.textContent = 1
 }

@@ -33,6 +33,12 @@ addButton.onclick = function() {
 
   inputElement.value = ""
 }
+document.onkeydown = function() {
+  const card = createCard(inputElement.value)
+  container.append(card)
+
+  inputElement.value = ""
+}
 
 const createCard = function(text) {
   const card = document.createElement("div")

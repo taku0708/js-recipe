@@ -116,10 +116,6 @@ container.append(choice2)
 container.append(choice3)
 container.append(choice4)
 
-const createButton = () => {}
-
-createButton()
-
 const quiz = {
   text: "ムズムズ問題",
   image: "Two.jpeg",

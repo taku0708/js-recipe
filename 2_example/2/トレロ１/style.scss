@@ -39,7 +39,7 @@ header {
 }
 
 .list-container {
-  min-width: 250px;
+  min-width: 250px; // 最小の幅
   width: 250px;
   padding: 8px;
 
@@ -61,7 +61,7 @@ header {
 .cards-container {
   max-height: calc(100vh - 200px);
   margin-top: 4px;
-  overflow-y: auto;
+  overflow-y: auto; // 枠内に情報が収まらない場合に、スクロールバーなどを表示する
 }
 
 .card {
@@ -83,7 +83,7 @@ header {
   }
 
   .text {
-    overflow-x: hidden;
+    overflow-x: hidden; // 内容がボックスに収まらない場合、収まらない部分は非表示となる。
   }
 
   &:hover {
@@ -127,7 +127,7 @@ header {
     border-width: 0px;
 
     &:focus {
-      outline: 0;
+      outline: 0; // デフォルトの輪郭線(outline)を消す
     }
   }
 
@@ -146,7 +146,9 @@ header {
     user-select: none;
 
     &:active {
-      transform: translateY(2px);
+      transform: translateY(
+        2px
+      ); // ボタンが押してから離されるまでY軸方向に浮き上がり
     }
   }
 }

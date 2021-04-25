@@ -39,3 +39,7 @@ select.addEventListener("change", () =>
       imageElement3.src = data.message // 画像を表示する
     }),
 )
+
+// const imageNum = () => {
+//   for (let n = 0, )
+// }

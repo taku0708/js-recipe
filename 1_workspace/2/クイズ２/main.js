@@ -100,25 +100,22 @@
 // ボタンもJS
 
 const container = document.querySelector("#choices-container")
-console.log(container)
 const quizText = document.querySelector("#quiz-text")
 const quizImage = document.querySelector("#quiz-image")
 const feedback = document.querySelector("#feedback")
-
-const choiceButton = function() {
-  const choice1 = document.createElement("button")
-  choice1.className = "choice1"
-  const choice2 = document.createElement("button")
-  choice2.className = "choice2"
-  const choice3 = document.createElement("button")
-  choice3.className = "choice3"
-  const choice4 = document.createElement("button")
-  choice4.className = "choice4"
-  container.append(choice1)
-  container.append(choice2)
-  container.append(choice3)
-  container.append(choice4)
-}
+const choice1 = document.createElement("button")
+choice1.className = "choice1"
+choice1.classList.add("choice1")
+const choice2 = document.createElement("button")
+choice2.className = "choice2"
+const choice3 = document.createElement("button")
+choice3.className = "choice3"
+const choice4 = document.createElement("button")
+choice4.className = "choice4"
+container.append(choice1)
+container.append(choice2)
+container.append(choice3)
+container.append(choice4)
 
 const quiz = {
   text: "ムズムズ問題",

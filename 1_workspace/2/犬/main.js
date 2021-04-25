@@ -1,5 +1,6 @@
 const imageElement = document.getElementById("dog-image")
 const imageElement2 = document.getElementById("cat-image")
+const changeButton = document.querySelector("#change-button")
 
 // 指定したサーバーにデータを取りに行く
 fetch("https://dog.ceo/api/breeds/image/random")
@@ -9,6 +10,10 @@ fetch("https://dog.ceo/api/breeds/image/random")
   .then((data) => {
     imageElement.src = data.message // 画像を表示する
   })
+
+changeButton.addEventListener("click", function() {
+  window.location.reload()
+})
 
 fetch("https://api.thecatapi.com/v1/images/search")
   .then((res) => {

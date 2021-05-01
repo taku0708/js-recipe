@@ -23,3 +23,10 @@
 .about__wrapper {
   background-color: #f2f7f5;
 }
+.about__wrapper__title {
+  text-align: center;
+  padding: 20px;
+}
+.about__wrapper__text {
+  padding: 10px 30px 20px 30px;
+}

@@ -21,12 +21,15 @@
 }
 
 .about__wrapper {
-  background-color: #f2f7f5;
+  background-color: #00473e;
+  border: 2px solid white;
 }
 .about__wrapper__title {
+  color: white;
   text-align: center;
   padding: 20px;
 }
 .about__wrapper__text {
+  color: white;
   padding: 10px 30px 20px 30px;
 }

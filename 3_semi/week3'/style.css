@@ -33,3 +33,9 @@
   color: white;
   padding: 10px 30px 20px 30px;
 }
+
+/* font-sizeはem、marginやpadding、width等はremを使用することがおすすめな理由
+*pxは絶対値なので、デヴァイスを変えた際に形が崩れる場合がある
+*em、remは相対値なので、その要素中、もしくは、親要素に指定されたfont-sizeの割合から算出される
+*https://note.com/takamoso/n/nde1275183086
+* */
